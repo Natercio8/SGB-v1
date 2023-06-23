@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    font-family: cursive;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(245, 245, 245);
+}
+.imagem{
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../IMG/Bsitter2.jpg);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 800px;
+}
+.header{
+    
+    background-color: rgb(219, 219, 219);
+    box-shadow: 0 4px 10px 0px rgb(80, 80, 80);
+    padding: 10px;
+    width: 100%;
+    height: 20px;
+    position: fixed;
+}
+header{
+    text-align: center;
+}
+li{
+    margin-left: 30px;
+    display: inline;
+    
+}
+a{
+    font-size: large;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(0, 55, 235);
+    -webkit-transition: 0.4s;
+}
+.texto{
+    margin-left: 150px;
+    background-color: rgba(255, 0, 0, 0);
+    width: 600px;
+    height: 300px;
+}
+.texto h1{
+    padding-top: 0px;
+    padding: 20px;
+    font-size: 51px;
+    line-height: 70px;
+    font-style: italic;
+}
+.container{
+    background-color: rgba(0, 0, 255, 0);
+    height: 580px;
+}
+.trabalho{
+    margin: auto;
+    text-align: center;
+    height: 50px;
+    padding: 20px;
+    background-color: rgb(212, 209, 209);
+}
+.container .trabalho ul li a{
+    font-size: x-large;
+    font-style: italic;
+}
+.container .trabalho ul li a:hover{
+    text-decoration: underline;
+}
+.babyContainter{
+    display: flex;
+    justify-content:center;
+}
+.babys{
+    width: 250px;
+    height: 350px;
+    background-color: rgba(255, 0, 0, 0);
+    text-align: center;
+    box-shadow: 0 4px 10px 0px rgb(80, 80, 80);
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.babys .img img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.babys p{
+    font-size: large;
+}
+.btnVer{
+    margin: auto;
+    text-align: center;
+    height: 40px;
+    padding: 20px;
+    background-color: rgb(236, 236, 236);
+}
+button{
+    cursor: pointer;
+    height: 40px;
+    width: 250px;
+    font-style: italic;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    color: white;
+    background-color: rgb(0, 0, 99);
+}
+.btnVer button a{
+    font-size: small;
+    color: white;
+}
+button:hover{
+    background-color: rgb(0, 0, 219);
+    -webkit-transition: 0.7s;
+    
+}
+.sobre{
+    background-color: rgb(255, 255, 255);
+    height: 700px;
+}
+.sobre h1,h2{
+    text-align: center;
+    font-style: italic;
+}
+.sobreFlex{
+    display: flex;
+    justify-content: center;
+}
+.about1{
+    background-color: rgba(0, 60, 255, 0);
+    width: 400px;
+    height: 500px;
+    margin-left: 10px;
+    
+}
+.about{
+    background-color: rgba(47, 0, 255, 0);
+    width: 400px;
+    height: 500px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.about h2,h3{
+    text-align: center;
+}
+.about p{
+    text-align: justify;
+}
+.about a{
+    color: rgb(0, 0, 219);
+}
+.about1 img{
+    width: 100%;
+    height: 100%;
+}
+.outros{
+    background-color: rgba(43, 255, 0, 0);
+    height: 400px;
+}
+.outros h3{
+    text-align: center;
+}
+.sectionCliente{
+    display: flex;
+    justify-content: center;
+}
+.clientes{
+    padding: 10px;
+    width: 220px;
+    height: 170px;
+    background-color: rgba(252, 137, 196, 0);
+    text-align: center;
+    box-shadow: 0 4px 10px 0px rgb(80, 80, 80);
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.txt p{
+    text-align: justify;
+}
+.contacto{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+}
+.contacto h1{
+    text-align: center;
+    font-style: italic;
+}
+.cnc{
+    display: flex;
+    justify-content: center;
+}
+.info1{
+    background-color: rgba(0, 0, 0, 0);
+    width: 400px;
+    height: 280px;
+}
+.info1 img{
+    width: 100%;
+    height: 271px;
+}
+.info{
+    background-color: rgba(0, 0, 0, 0);
+    width: 500px;
+    height: 350px;
+    padding: 8px;
+    margin-left: 10px;
+}
+.info form{
+    margin: auto;
+}
+
+.info form input{
+    background-color:rgb(224, 224, 224);
+    width: 98%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border:0;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: large;
+}
+
+.info form textarea{
+    padding: 5px;
+    background-color:rgb(224, 224, 224);
+    resize: none;
+    width: 98%;
+    margin-left: 20px;
+    height: 80px;
+    border-radius: 10px;
+    outline: none;
+    font-size: large;
+}
+.info form button{
+    width: 100%;
+}
+.info form button:hover{
+    background-color: rgb(255, 94, 121);
+    color: rgb(255, 255, 255);
+    -webkit-transition: 0.7s;
+}
+.links{
+    background-color: rgba(4, 0, 255, 0);
+    height: 400px;
+    font-family: 'Poppins', sans-serif;
+}
+.seguir{
+    display: flex;
+    justify-content: center;
+}
+.seguirSub{
+    
+    background-color: rgba(248, 36, 36, 0);
+    width: 400px;
+    height: 300px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.seguirSub h2{
+    text-align: center;
+    color: rgb(0, 55, 235);
+}
+.seguirSub p{
+    text-align: justify;
+}
+.seguirSub ul li{
+    display: block;
+}
+.BabyInfoContainer{
+    background-color: rgba(0, 0, 0, 0);
+    height: 700px;
+}
+.InfoContainer{
+    width: 600px;
+    background-color: rgb(253, 253, 253);
+    margin: auto;
+    box-shadow: 0 4px 10px 0px rgb(80, 80, 80);
+    padding: 10px;
+}
+.InfoContainer .img{
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 6px;
+}
+.InfoContainer .img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.infotexto{
+    background-color: rgba(187, 187, 187, 0.164);
+    padding: 10px;
+    margin-bottom: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.795);
+}
+.infotexto p{
+    margin-left: 100px;
+}
+.final{
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0);
+    padding: 6px;
+    margin-bottom: 20px;
+    margin: 10px 0 10px 0;
+}
+.final button{
+    border: 0;
+    width: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(0, 8, 85);
+}
+.final button a{
+    font-size: small;
+    color: white;
+}
+.final button:hover{ 
+    background-color: rgb(8, 29, 218);
+    -webkit-transition: 0.4s;
+}
+
+.rodape{
+    padding: 10px;
+    background-color: rgb(226, 226, 226);
+    bottom: 0;
+    height: 40px;
+}
+.rodape p{
+    display: inline;
+}
+#p1{
+    float: left;
+    margin-left: 150px;
+}
+#p2{
+    float: right;
+    margin-right: 150px;
+}
+.clienteCadastro{
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+
+}
+.form{
+    margin: auto;
+    width: 500px;
+}
+.clienteCadastro form input{
+    display: block;
+    background-color:rgb(224, 224, 224);
+    width: 98%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border:0;
+
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: large;
+   
+}
+.clienteCadastro .form{
+    text-align: center; 
+}
+.clienteCadastro form a{
+    font-style: italic;
+    text-decoration: underline;
+}
+.centrar{
+    margin: auto;
+    width: 700px;
+   
+    background-color: rgba(255, 0, 0, 0);
+}
+table{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+}
+
+td{
+    background-color: whitesmoke
+}
+#btncontratar{
+    border: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 80%;
+    background-color: rgb(0, 0, 99);
+    color: white;
+    padding: 1px;
+}
+#btncontratar a{
+
+    color: white;
+}
+#btncontratar a:hover{
+    color: white;
+
+}
+.label{
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid rgba(0, 128, 0, 0);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color:rgb(224, 224, 224);
+    width: 95.5%;
+    height: 30px;
+}
+label{
+    float: left;
+    font-size: large;
+    color:rgb(99, 99, 99);
+}
+select{
+    cursor: pointer;
+    background-color:rgba(224, 224, 224, 0);
+    float: right;
+    margin-right: 10px;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    width: 170px;
+    height: 30px;
+    font-size: large;
+}
+.finalizarContrato{
+    background-color: rgba(255, 255, 255, 0);
+    height: 600px;
+}
+.finalizarContrato h2{
+    text-align: center;
+    font-style: italic;
+}
+.assinar{
+    margin: auto;
+    padding: 20px;
+    width: 800px;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px 0px rgb(80, 80, 80);
+}
+.assinar p{
+    font-size: large;
+    display: inline;
+    font-style: italic;
+}
+.assinar p, input, button{
+    display: inline;
+    margin-left: 20px;
+    
+}
+.assinar button{
+    border: 0;
+    width: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(0, 8, 85);   
+}
+.assinar button a{
+    font-size: small;
+    color: white;
+}
+.assinar button:hover{ 
+    background-color: rgb(8, 29, 218);
+    -webkit-transition: 0.4s;
+}
+.assinar #p{
+    color: blue;
+    text-decoration: underline;
+}
+.assinar input{
+    width: 80px;
+}
+

@@ -1,0 +1,107 @@
+<?php
+    require('Backend/conexao.php');
+    session_start();
+
+    $numeroBalcao = "3";
+    if(!isset($_SESSION["id"])){
+
+        header("location:login.php");
+        exit;
+    }
+    else{
+
+        $id = $_SESSION["id"];
+
+        $codigo = $_SESSION['codigo'];
+        $nomeFuncionario = $_SESSION['nome'];
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Dstyle.css">
+        <link rel="shortcut icon" href="IMG/isia1.png" type="image/x-icon">
+        <title>Tesouraria -  <?php echo(" ".$nomeFuncionario); ?></title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <h2>Balcão <?php echo ($numeroBalcao); ?></h2>
+                <p class="sair"><a href="Backend/Sair.php"> Sair </a></p>
+            </nav>
+        </header>
+        <br><br><br><br><br><br>
+        <div class="container">
+        <?php
+        
+            $servico = $conn->prepare("SELECT * from servico");
+            $servico->execute();
+
+            $resultado = $servico->fetchAll();
+          
+            for($i=0; $i<sizeof($resultado); $i++){
+                
+                $values = $resultado[$i];
+        ?>
+
+            <div class="servico">
+
+                <button type="submit">ASSEGUIR</button>
+                <p>Serviço: <?php echo $values['tipo_servico'];?></p>
+                <p>Serviço: <?php echo $values['tipo_servico'];?></p>
+                <p>Senhas emitidas: <?php echo $values['senhas_emitidas'];?></p>
+                <p id="sa">Senha actual:</p>
+                <p id="sa">56</p>
+            </div>
+
+        <?php }?>
+        
+        
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="rodape">
+            <footer>
+                <span>
+                <h4>DM & TMO : Systems &copy; Copyright 2023</h4>
+                </span>
+            </footer>
+        </div>
+        <br><br><br><br><br>
+    </body>
+
+</html>
+<script>
+    
+</script>
+<!--
+    TMO: Studio; copyright 2023
+            The Mark Of
+    ...............................
+    ...............................
+                ......
+                ......
+                ......
+                ......
+                ......
+                ......
+                ......
+                ......
+                ......
+                ......
+                ......
+            ....      ....
+        ........      ........
+    ............      ............
+     ..                        ..
+                ......
+                 ....
+                  ..
+
+
+-->

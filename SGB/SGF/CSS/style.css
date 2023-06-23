@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(180, 180, 180);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.h-1{
+    padding: 10px;
+    background-color: rgba(229, 255, 0, 0);  
+}
+.h-1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.h-2{
+    color: white;
+    
+    background-color:rgba(20, 18, 110, 0.849);
+    padding: 10px;
+
+}
+section{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+
+    width: 500px;
+    height: 400px;
+}
+section div div{
+    
+    margin-bottom: 35px;
+    border: 0.5px solid rgb(255, 255, 255);
+
+    border-radius: 4px;
+    box-shadow: 0 10px 15px rgb(0, 0, 0);
+
+    width: 100%;
+    height: 50px;
+}
+section div div h2, button{
+    display: inline;
+    padding: 18px;
+}
+
+section div div h2{
+   
+margin-left: 20px;
+color: white;
+
+font-size:xx-large;
+}
+section div div button{
+   
+   border: 0;
+   float: right;
+   width: 80%;
+   cursor: pointer;  
+}
+section div div button:hover{
+    background-color: rgb(219, 219, 219);
+}
+.rodape{
+
+    margin: auto;
+
+    width: 90%;
+    color: white;
+
+    padding: 8px;
+    background-color:rgba(20, 18, 110, 0.884);
+
+    text-align: center;
+    font-style: italic;
+}
+.recibo{
+    margin: auto;
+    width: 300px;
+
+    height: 390px;
+    background-color: rgb(255, 255, 255);
+
+    display: none;
+    text-align: center;
+   
+    
+}
+.recibo h4{
+    
+    padding: 10px;
+    font-style: italic;
+    
+}
+.recibo p{
+  
+    display: inline;
+    font-style: italic;
+}
+.recibo h1{
+    font-size: 90px;
+
+}
+.recibo h5{
+    display: inline;
+    font-size:60px;
+
+}
+@media print{
+    section{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+
+    .recibo{
+        display: block;
+    }
+    .rodape{
+        display: none;
+    }
+}
+
+

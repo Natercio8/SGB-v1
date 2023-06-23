@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    font-family: cursive;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+.header{
+    
+    background-color: rgb(219, 219, 219);
+    box-shadow: 0 4px 10px 0px rgb(80, 80, 80);
+    padding: 10px;
+    width: 100%;
+    height: 20px;
+    position: fixed;
+}
+header{
+    text-align: center;
+}
+li{
+    margin-left: 30px;
+    display: inline;
+    
+}
+a{
+    font-size: large;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(0, 55, 235);
+    -webkit-transition: 0.4s;
+}
+.sobre{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+.sobre button{
+    border: 0;
+    width: 80px;
+    height: 90%;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(0, 8, 85);   
+}
+.sobre button a{
+    font-size: small;
+    color: white;
+}
+.sobre button:hover{ 
+    background-color: rgb(8, 29, 218);
+    -webkit-transition: 0.4s;
+}
+.sobre #b{ 
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.sobre #b:hover{ 
+
+    background-color: rgb(97, 97, 97);
+    -webkit-transition: 0.4s;
+}
+.centro{
+    margin: auto;
+    width: 940px;
+    box-shadow: 0 4px 10px 0px rgb(80, 80, 80);
+    background-color: rgb(204, 204, 204);
+}
+table{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 25%;
+}
+th{
+    padding: 4px;
+    color: rgb(0, 55, 235);
+    font-family: 'Poppins', sans-serif;
+}
+td{
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+}
+
+.BabyInfoContainer{
+    background-color: rgba(0, 0, 0, 0);
+    height: 700px;
+}
+.InfoContainer{
+    width: 600px;
+    background-color: rgb(253, 253, 253);
+    margin: auto;
+    box-shadow: 0 4px 10px 0px rgb(80, 80, 80);
+    padding: 10px;
+}
+.InfoContainer .img{
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 6px;
+}
+.InfoContainer .img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.infotexto{
+    background-color: rgba(187, 187, 187, 0.164);
+    padding: 10px;
+    margin-bottom: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.795);
+}
+.infotexto p{
+    margin-left: 100px;
+}
+.final{
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0);
+    padding: 6px;
+    margin-bottom: 20px;
+    margin: 10px 0 10px 0;
+}
+.final button{
+    border: 0;
+    width: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(0, 8, 85);
+}
+.final button a{
+    font-size: small;
+    color: white;
+}
+.final button:hover{ 
+    background-color: rgb(8, 29, 218);
+    -webkit-transition: 0.4s;
+}
+.addForm{
+    margin: auto;
+}
+.add{
+    display: none;
+    text-align: center;
+    padding: 10px;
+    width: 390px;
+    background-color: rgba(255, 0, 0, 0);
+    margin: auto;
+    box-shadow: 0px 0px 10px 0px rgb(104, 104, 104);
+    border-radius: 4px;
+}
+#cad{
+    font-family: 'Poppins', sans-serif;
+    width: 180px;
+    height: 40px;
+    color: white;
+}
+input{
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin-bottom: 30px;
+    outline: none;
+    width: 380px;
+    height: 40px;
+    font-size: x-large;
+    border-radius: 3px;
+    border: 0;
+    border: 1px solid rgb(104, 104, 104);
+}
+.label{
+   
+    padding: 5px;
+    border: 1px solid rgba(0, 128, 0, 0);
+    margin-bottom: 30px;
+    border-radius: 3px;
+    border: 1px solid rgb(104, 104, 104);
+    width: 96%;
+    height: 30px;
+}
+label{
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    font-size: x-large;
+    color:rgb(99, 99, 99);
+}
+select{
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    background-color:rgba(224, 224, 224, 0);
+    float: right;
+    margin-right: 10px;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    width: 170px;
+    height: 30px;
+    font-size: x-large;
+}
+.fsobre{
+    background-color: rgb(255, 255, 255);
+    
+}
+.fsobre button{
+    border: 0;
+    width: 80px;
+    height: 90%;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(0, 8, 85);   
+}
+.fsobre button a{
+    font-size: small;
+    color: white;
+}
+.fsobre button:hover{ 
+    background-color: rgb(8, 29, 218);
+    -webkit-transition: 0.4s;
+}
+.fsobre #b{ 
+    background-color: red;
+    color: white;
+}
+#ba{ 
+    background-color: red;
+    color: white;
+}
+#bc{
+    color: white;
+    background-color: rgb(0, 104, 0);
+}
+.fcentro{
+    margin: auto;
+    width: 940px;
+    box-shadow: 0 4px 10px 0px rgb(80, 80, 80);
+    background-color: rgb(204, 204, 204);
+}
+.agendar{
+    display: none;
+    padding: 10px;
+    margin: auto;
+    width: 600px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 0px 0px 10px 0px rgb(104, 104, 104);
+    
+}
+#dt{
+    width: 150px;
+    font-size: large;
+    border: 0;
+    cursor: pointer;
+}
+#dtt{
+
+    width: 85px;
+    font-size: large;
+    border: 0;
+    cursor: pointer;
+}
+.agendar p, input{
+    font-family: 'Poppins', sans-serif;
+    display: inline;
+}
+#ae{
+    width: 150px;
+    color: white;
+}
+.rodape{
+    padding: 10px;
+    background-color: rgb(226, 226, 226);
+    height: 40px;
+    bottom: 0;
+}
+.rodape p{
+    display: inline;
+}
+#p1{
+    float: left;
+    margin-left: 150px;
+}
+#p2{
+    float: right;
+    margin-right: 150px;
+}
